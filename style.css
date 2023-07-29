@@ -119,6 +119,7 @@ a {
 
 .title p {
   padding-top: 15px;
+  font-size: 20px;
 }
 
 .title-share-button {
@@ -147,4 +148,5 @@ footer {
 
 footer p {
   color: var(--bg);
+  font-size: 15px;
 }
