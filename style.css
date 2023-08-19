@@ -13,11 +13,13 @@
 :root {
   --text: rgb(10, 10, 10);
   --bg: #fff;
+  --bg1: rgba(255, 255, 255, 0.5);
 }
 
 .light-theme {
   --bg: rgb(10, 10, 10);
   --text: #fff;
+  --bg1: rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -34,6 +36,19 @@ body {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.nav {
+  width: 100%;
+  max-width: 750px;
+  justify-content: flex-end;
+  display: flex;
+  position: fixed;
+  background-color: var(--bg1);
+  border-radius: 20px;
+  padding: 10px;
+  z-index: 99;
 }
 
 header {
@@ -42,7 +57,8 @@ header {
   display: flex;
   justify-content: flex-end;
   padding: 12px;
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 header .judul {
@@ -52,7 +68,7 @@ header .judul {
   justify-content: center;
   align-items: center;
   display: flex;
-  color: var(--bg);
+  color: var(--text);
 }
 
 .judul-akun {
