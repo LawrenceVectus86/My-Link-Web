@@ -46,6 +46,7 @@ body {
   display: flex;
   position: fixed;
   background-color: var(--bg1);
+  backdrop-filter: blur(10px);
   border-radius: 50px;
   padding: 10px;
   z-index: 99;
