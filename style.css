@@ -14,22 +14,48 @@
   --text: rgb(10, 10, 10);
   --bg: #fff;
   --bg1: rgba(255, 255, 255, 0.5);
+  --kotak: #337ccf;
 }
 
 .light-theme {
   --bg: rgb(10, 10, 10);
   --text: #fff;
+  --kotak: #1450a3;
   --bg1: rgba(0, 0, 0, 0.5);
 }
 
 body {
-  background-color: var(--text);
+  background-image: url('./img/Bg.jpg');
+  background-size: 400%;
+  background-position: center;
+  background-repeat: repeat;
   color: rgb(240, 240, 240);
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100vw;
   height: 100vh;
+}
+
+.yout {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+iframe {
+  border-radius: 10px;
+  display: grid;
+  margin-bottom: 20px;
+}
+
+.icon {
+  padding-top: 0px;
+  margin: 4px 8px;
+  width: 10em;
+  height: 45px;
+  color: var(--bg);
 }
 
 #icon1 {
@@ -111,52 +137,68 @@ header .judul {
   padding-top: 20px;
 }
 
-a {
+/* Konten */
+
+.isi a {
+  text-dicoration: none;
+  color: var(--bg);
+  transition: all ease 0.3s;
+}
+
+.isi a:hover {
+  color: tomato;
+}
+
+.isi a i {
+  font-size: 25px;
+}
+
+/* Social Box */
+
+.box-flex {
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.social-box {
+  display: inline-block;
+  margin: 5px;
+  padding: 20px;
+  width: 15em;
+  height: 10em;
+  background-color: var(--bg1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.social-box:hover {
+  background-color: var(--kotak);
+}
+
+.social-box a {
   text-decoration: none;
-  color: #fff;
+  color: var(--text);
+  align-items: center;
+  margin: 20px;
 }
 
-.title {
-  width: 100%;
-  background-color: rgb(37, 37, 37);
-  margin: 7px;
-  border-radius: 17px;
+.social-box i {
+  font-size: 50px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
   display: flex;
-  justify-content: space-between;
-
-  transition: 0.5s ease;
 }
 
-.title:hover {
-  transition: cubic-bezier(0.07, 1.41, 0.82, 1.41) 0.2s;
-  transform: scale(1.02);
-  background-color: rgb(20, 20, 20);
-  color: #fff;
-}
-
-.title p {
-  padding-top: 15px;
+.social-box p {
   font-size: 20px;
-}
-
-.title-share-button {
-  margin: 8px;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: rgb(52, 52, 52);
-}
-
-.title-share-button svg {
-  margin-left: 12px;
-  margin-top: 10px;
-}
-
-.icon {
-  padding-top: 4px;
-  margin: 4px 8px;
-  width: 45px;
-  height: 45px;
+  text-align: center;
 }
 
 footer {
@@ -168,4 +210,30 @@ footer p {
   font-size: 13px;
   text-align: center;
   padding: 5px;
+}
+
+footer a {
+  padding-top: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
+}
+
+footer a button {
+  color: var(--bg);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: var(--text);
+}
+
+@media screen and (max-width: 560px) {
+  .social-box {
+    width: 10em;
+    height: 10em;
+  }
+  .nav {
+    max-width: 430px;
+  }
 }
