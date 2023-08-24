@@ -182,4 +182,5 @@ footer a button {
   padding: 10px 20px;
   border-radius: 50px;
   background-color: var(--bg1);
+  cursor: pointer;
 }

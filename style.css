@@ -15,6 +15,7 @@
   --bg: #fff;
   --bg1: rgba(255, 255, 255, 0.5);
   --kotak: #337ccf;
+  --kotak1: #9eb384;
 }
 
 .light-theme {
@@ -22,13 +23,13 @@
   --text: #fff;
   --kotak: #1450a3;
   --bg1: rgba(0, 0, 0, 0.5);
+  --kotak1: #435334;
 }
 
 body {
-  background-image: url('./img/Bg.jpg');
-  background-size: 400%;
-  background-position: center;
-  background-repeat: repeat;
+  /* background-image: url('./img/bg10.jpg');
+  background-size: 400%; */
+  background-color: var(--kotak1);
   color: rgb(240, 240, 240);
   display: flex;
   align-items: center;
@@ -206,7 +207,7 @@ footer {
 }
 
 footer p {
-  color: var(--bg);
+  color: #fff;
   font-size: 13px;
   text-align: center;
   padding: 5px;
@@ -226,6 +227,7 @@ footer a button {
   padding: 10px 20px;
   border-radius: 50px;
   background-color: var(--text);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 560px) {
