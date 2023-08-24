@@ -100,7 +100,7 @@ header .judul {
 }
 
 .judul-akun {
-  color: var(--bg);
+  color: var(--text);
 }
 
 .share-button {
@@ -142,16 +142,16 @@ header .judul {
 
 .isi a {
   text-dicoration: none;
-  color: var(--bg);
-  transition: all ease 0.3s;
-}
-
-.isi a:hover {
-  color: tomato;
 }
 
 .isi a i {
   font-size: 25px;
+  color: var(--text);
+  transition: all ease 0.3s;
+}
+
+.isi a i:hover {
+  color: tomato;
 }
 
 /* Social Box */
