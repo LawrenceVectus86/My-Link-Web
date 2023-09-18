@@ -87,6 +87,13 @@ header {
   padding: 12px;
   margin-top: 50px;
   margin-bottom: 100px;
+  position: fixed;
+  top: -300px;
+  left: 55%;
+  transform: translateX(-52%);
+  background-color: var(--kotak1);
+  transition: top 0.3s;
+  z-index: 1000;
 }
 
 header .judul {
@@ -176,6 +183,7 @@ header .judul {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   transition: background-color 0.3s;
+  border: 2px solid black;
 }
 
 .social-box:hover {

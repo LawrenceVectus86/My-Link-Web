@@ -110,6 +110,19 @@
       <a href="index2.html"><button>Back To Old Version</button></a>
     </footer>
 
+    <script>
+      // Saat Di scroll
+      window.addEventListener('scroll', function () {
+        const header = document.querySelector('header');
+        if (window.scrollY > 100) {
+          // Atur nilai berapa pixel header akan muncul
+          header.style.top = '0';
+        } else {
+          header.style.top = '-100px';
+        }
+      });
+    </script>
+
     <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/4b2f8bfc61.js" crossorigin="anonymous"></script>
   </body>
