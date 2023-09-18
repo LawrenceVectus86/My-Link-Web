@@ -183,7 +183,7 @@ header .judul {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   transition: background-color 0.3s;
-  border: 2px solid black;
+  border: 2px solid var(--text);
 }
 
 .social-box:hover {
